@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Document("productos")
+@Document("products")
 public class Product {
 
     @Id
@@ -23,6 +23,6 @@ public class Product {
     private Double price;
     private LocalDateTime creationDate;
     private LocalDateTime modificationDate;
-    //private Category category;
+    private Category category;
 
 }
