@@ -1,6 +1,6 @@
 package com.mongo.MongoSpringBoot.service;
 
-import com.mongo.MongoSpringBoot.model.Product;
+import com.mongo.MongoSpringBoot.model.document.Product;
 import com.mongo.MongoSpringBoot.repository.ProductRepository;
 import com.mongo.MongoSpringBoot.repository.ProductTemplateRepository;
 import org.springframework.beans.factory.annotation.Autowired;

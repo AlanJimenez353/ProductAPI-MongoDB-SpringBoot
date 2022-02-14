@@ -1,6 +1,6 @@
 package com.mongo.MongoSpringBoot.repository;
 
-import com.mongo.MongoSpringBoot.model.Product;
+import com.mongo.MongoSpringBoot.model.document.Product;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

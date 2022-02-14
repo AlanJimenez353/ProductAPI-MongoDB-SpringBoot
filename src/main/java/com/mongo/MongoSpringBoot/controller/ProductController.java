@@ -1,6 +1,6 @@
 package com.mongo.MongoSpringBoot.controller;
 
-import com.mongo.MongoSpringBoot.model.Product;
+import com.mongo.MongoSpringBoot.model.document.Product;
 import com.mongo.MongoSpringBoot.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -29,12 +29,12 @@ public class ProductController {
     }
 
     @GetMapping("/productGreaters")
-    public List<Product> findProductByPriceGreeater(@RequestParam int price) {
+    public List<Product> findProductByPriceGreater(@RequestParam int price) {
         return service.findByPriceGreaterThan(price);
     }
 
     @GetMapping("/product/all")
-    public List<Product> findAllByCategoriaSortedByAge(
+    public List<Product> findAllByCategorySortedByAge(
             @RequestParam String category,
             @RequestParam String orderBy,
             @RequestParam int limit) {

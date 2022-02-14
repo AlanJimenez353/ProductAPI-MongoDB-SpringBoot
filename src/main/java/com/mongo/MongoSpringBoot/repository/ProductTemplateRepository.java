@@ -1,6 +1,6 @@
 package com.mongo.MongoSpringBoot.repository;
 
-import com.mongo.MongoSpringBoot.model.Product;
+import com.mongo.MongoSpringBoot.model.document.Product;
 
 import java.util.List;
 
